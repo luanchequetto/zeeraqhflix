@@ -3,7 +3,7 @@
     {
       "titulo": "Front End",
       "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "cor": "#f6fc16",
       "link_extra": {
         "text": "Formação de Front End na Alura",
         "url": "https://www.alura.com.br/cursos-online-front-end"
@@ -45,7 +45,7 @@
     },
     {
       "titulo": "Back End",
-      "cor": "#00C86F",
+      "cor": "#f6fc16",
       "link_extra": {
         "text": "Cursos de Back End na Alura",
         "url": "https://www.alura.com.br/cursos-online-programacao"
@@ -75,7 +75,7 @@
     },
     {
       "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
+      "cor": "#f6fc16",
       "link_extra": {
         "text": "Cursos de Data Science na Alura",
         "url": "https://www.alura.com.br/formacao-data-science"
@@ -101,7 +101,7 @@
     },
     {
       "titulo": "Filmes",
-      "cor": "orange",
+      "cor": "#f6fc16",
       "videos": [
         {
           "titulo": "Interestellar",
@@ -122,16 +122,16 @@
       ]
     },
     {
-      "titulo": "Games",
-      "cor": "red",
+      "titulo": "Flow Podcast",
+      "cor": "#f6fc16",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
+        "text": "Melhores conversas do flow",
+        "url": "https://www.twitch.tv/flowpodcast"
       },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Primo Rico",
+          "url": "https://youtu.be/lYNBpQgQzeo"
         },
         {
           "titulo": "Assassins Creed Valhalla",
@@ -153,7 +153,7 @@
     },
     {
       "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
+      "cor": "#f6fc16",
       "link_extra": {
         "text": "Curso sobre aprendizado na Alura",
         "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
