@@ -39,6 +39,7 @@ export default function BannerMain({
             Assistir
           </WatchButton>
         </ContentAreaContainer.Item>
+        
       </ContentAreaContainer>
     </BannerMainContainer>
   );
