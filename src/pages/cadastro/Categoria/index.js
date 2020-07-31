@@ -4,32 +4,22 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../PageDefault';
 import Formfield from '../../../components/FormField';
 import Button from '../../../components/Button';
-
+import useForm from '../../../hooks/useForm'
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '#000000',
   };
+
+  const { handleChange, values, clearForm }= useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function setValue(chave, value) {
-    setValues({
-      ...values,
-      [chave]: value,
-
-    });
-  }
-
-  function handleChange(e) {
-    // const { getAttribute, value } = e.target;
-    setValue(e.target.getAttribute('name'), e.target.value);
-  }
-
+  
   useEffect(()=>{
-    console.log('alo alo brasil')
-    const URL_TOP = 'https://zeeraqhflix.herokuapp.com/categorias';
+    const URL_TOP = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias'
+    : 'https://zeeraqhflix.herokuapp.com/categorias';
     fetch(URL_TOP)
     .then(async (respostaDoServidor) =>{
       const resposta  = await respostaDoServidor.json();
@@ -45,7 +35,7 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {values.nome}
+        {values.titulo}
       </h1>
 
       <form onSubmit={(e) => {
@@ -54,16 +44,16 @@ function CadastroCategoria() {
           ...categorias,
           values,
         ]);
-        setValues(valoresIniciais);
+        clearForm();
       }}
       >
 
         <Formfield
           label="Nome da Categoria"
-          value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
           type="text"
-          name="nome"
+          name="titulo"
         />
 
         <Formfield
@@ -94,7 +84,7 @@ function CadastroCategoria() {
       <ul>
         {categorias.map((categoria, indice) => (
           <li key={`${categoria}${indice}`}>
-            {categoria.nome}
+            {categoria.titulo}
           </li>
         ))}
       </ul>

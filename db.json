@@ -1,16 +1,98 @@
 {
-    "categorias": [
-        {
-        "id": 1,
-        "nome": "Front End",
-        "descricao": "Uma Categoria Bacana",
-        "cor": "#cbd1ff"
-        },
-        {
-            "id": 2,
-            "nome": "Outra categoria",
-            "descricao": "Uma Categoria Bacana",
-            "cor": "#cbd1ff"
-            }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Flow PodCast",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Melhores Conversas do Flow",
+        "url": "https://www.twitch.tv/flowpodcast"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Playlists",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Playlists Variadas",
+        "url": "https://www.youtube.com"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "DIY Things",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Idéias DIY Tech",
+        "url": "https://www.alura.com.br/cursos-online-mobile"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Codding",
+      "cor": "orange"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Thiago Nigro - Primo Rico",
+      "url": "https://youtu.be/lYNBpQgQzeo"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "DIY Laptop to AIO Computer",
+      "url": "https://youtu.be/8jeLCQ62vFk"
+    },
+    {
+      "titulo": "Froid",
+      "url": "https://youtu.be/NZVvywYNrfg",
+      "categoriaId": 1,
+      "id": 16
+    },
+    {
+      "titulo": "Mundo Sem Fim",
+      "url": "https://youtu.be/KeZlB2ho83E",
+      "categoriaId": 1,
+      "id": 17
+    },
+    {
+      "titulo": "Maurício Meireles",
+      "url": "https://youtu.be/sCLA0hypxiU",
+      "categoriaId": 1,
+      "id": 18
+    },
+    {
+      "titulo": "Primo Rico",
+      "url": "https://youtu.be/lYNBpQgQzeo",
+      "categoriaId": 1,
+      "id": 19
+    },
+    {
+      "titulo": "Acoustic Rock 70s 80s 90s",
+      "url": "https://youtu.be/kI4dUyuvPTk",
+      "categoriaId": 2,
+      "id": 20
+    },
+    {
+      "titulo": "Alternative Rock 2000",
+      "url": "https://youtu.be/5f-wQBh-zbQ",
+      "categoriaId": 2,
+      "id": 21
+    },
+    {
+      "titulo": "Pior Disco do Ano",
+      "url": "https://youtu.be/3F2x30dB42M",
+      "categoriaId": 2,
+      "id": 22
+    },
+    {
+      "titulo": "Chillstep",
+      "url": "https://youtu.be/M5QY2_8704o",
+      "categoriaId": 2,
+      "id": 23
+    }
+  ]
 }
